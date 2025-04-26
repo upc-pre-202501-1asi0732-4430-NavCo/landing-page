@@ -2,340 +2,312 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Descubre cómo Navex ofrece una solución completa para la gestión de flotas en el sector del transporte empresarial. Nuestra plataforma integral ofrece una amplia gama de características diseñadas para simplificar y optimizar las operaciones de transporte, incluyendo estadísticas de rendimiento, reporte de infracciones, registro de incidencias y seguimiento de envíos exitosos. Con planes de suscripción flexibles y herramientas fáciles de usar, Navex se adapta a las necesidades específicas de cada empresa, mejorando la eficiencia operativa y garantizando la satisfacción del cliente en el competitivo mercado del transporte."
+    />
+    <!--Colocamos la descripción-->
+    <meta
+      name="keywords"
+      content="UX, Estrategia, Transformación Digital, Aplicaciones, Desarrollo de Software, Gestión Empresarial, Navex."
+    />
+    <meta name="author" content="Equipo de Desarrollo de Navex." />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <!--Aquí enlazamos el CSS con el HTML-->
+
+    <link rel="icon" href="assets/images/logo.jpg" />
+    <title>Navex - Tu solución para la gestión empresarial</title>
+    <!--Aquí ponemos el título de la empresa-->
   </head>
   <body>
-    <header class="sticky-top" id="header">
-      <nav class="navbar navbar-expand-lg bg-blue navbar-dark">
-        <div class="container-fluid">
+    <header id="header" class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
           <a class="navbar-brand" href="#header">
             <img
-              src="public/assets/images/App-BranchIcon.png"
+              src="assets/images/logo.jpg"
               alt="Navbar-Branch"
               class="d-inline-block align-text-top"
             />
-
-            MoviGestion
+            Navex
           </a>
-
           <button
             class="navbar-toggler"
             type="button"
-            data-bs-target="#navbarCollapse"
             data-bs-toggle="collapse"
-            data-target="#navbarCollapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <div class="nav-item nav-link" id="switcher">
-            <div class="form-switch translate" id="es">
-              <span class="language lang" key="language1">English</span>
-
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="flexSwitchCheckChecked"
-              />
-
-              <span class="language lang" key="language2">Spanish</span>
-            </div>
-          </div>
-
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarCollapse"
-          >
-            <ul class="navbar-nav text-center">
-              <li>
-                <a
-                  href="#hero"
-                  class="nav-item nav-link active lang"
-                  key="navbar-item1"
-                  >Home</a
-                >
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto text-center">
+              <li class="nav-item">
+                <a href="#hero" class="nav-link active">Home</a>
               </li>
-
-              <li>
-                <a
-                  href="#about-us"
-                  class="nav-item nav-link lang"
-                  key="navbar-item2"
-                  >About Us</a
-                >
+              <li class="nav-item">
+                <a href="#about-us" class="nav-link">About Us</a>
               </li>
-
-              <li>
-                <a
-                  href="#about-team"
-                  class="nav-item nav-link lang"
-                  key="navbar-item3"
-                  >Team</a
-                >
+              <li class="nav-item">
+                <a href="#services" class="nav-link">Services</a>
               </li>
-
-              <li>
-                <a
-                  href="#services"
-                  class="nav-item nav-link lang"
-                  key="navbar-item4"
-                  >Services</a
-                >
+              <li class="nav-item">
+                <a href="#pricing" class="nav-link">Pricing</a>
               </li>
-
-              <li>
-                <a
-                  href="#pricing"
-                  class="nav-item nav-link lang"
-                  key="navbar-item5"
-                  >Pricing</a
-                >
-              </li>
-
-              <li>
-                <a
-                  href="#contact-Us"
-                  class="nav-item nav-link lang"
-                  key="navbar-item6"
-                  >Contact Us</a
-                >
+              <li class="nav-item">
+                <a href="#contact-Us" class="nav-link">Contact Us</a>
               </li>
             </ul>
+            <div class="nav-item nav-link" id="switcher">
+              <div class="form-switch translate" id="es">
+                <span class="language lang" key="language1"></span>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="flexSwitchCheckChecked"
+                />
+                <span class="language lang" key="language2"></span>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
     </header>
-  </body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <section id="about-us">
-      <div>
-        <section id="Us" class="py-5">
-          <div class="container py-5">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-2">
-                <p
-                  class="h6 mb-1 text-uppercase text-primary mb-3 lang"
-                  key="titleAboutUs"
-                >
-                  About Us
-                </p>
-                <h2 class="mb-4 text-uppercase lang" key="subTitleAboutUs">
-                  We are the perfect team you need
-                </h2>
-                <p class="text-small text-muted lang" key="bodyAboutUs">
-                  We are a company whose mission is to optimize and organize
-                  with great efficiency, the different activities carried out by
-                  a carrier solving the various problems that these present.
-                </p>
-                <div class="p-2"></div>
-                <ul class="list-check list-unstyled row px-3 mb-4">
-                  <li
-                    class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang"
-                    key="feat1AboutUs"
+
+    <main>
+      <section id="hero" class="py-5">
+        <div class="container">
+          <!-- Hero principal -->
+          <div class="row align-items-center text-center text-lg-start">
+            <!-- Texto -->
+            <div class="col-lg-6 mb-4 mb-lg-0 order-2 order-lg-1">
+              <p
+                class="h6 text-uppercase text-primary mb-3 lang"
+                key="titleHero"
+              >
+                Welcome to Navex
+              </p>
+              <h2 class="mb-4 lang" key="subTitleHero">
+                ARE YOU READY TO BOOST YOUR PERFORMANCE
+              </h2>
+              <p class="text-muted lang" key="subTitleHero2">
+                Evaluate your growth path together with us.
+              </p>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.example.navex"
+                target="_blank"
+              >
+                <img
+                  class="callTo-Buttons img-fluid"
+                  src="assets/images/Google_Play_Store_badge.svg"
+                  alt="Google Play Store Button"
+                />
+              </a>
+              <!-- Descargar APK Button -->
+              <a
+                href="assets/apk/navex_mobile.zip"
+                download
+                class="btn btn-primary text-uppercase"
+              >
+                Descargar APK
+              </a>
+            </div>
+            <!-- Imagen -->
+            <div class="col-lg-6 order-1 order-lg-2">
+              <img
+                src="assets/images/1.jpg"
+                alt="Hero-Image"
+                class="img-fluid rounded shadow"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Sección de tarjetas -->
+        <div class="container mt-5">
+          <div class="row g-4">
+            <!-- Tarjeta 1 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100">
+                <div class="card-body text-center">
+                  <h5 class="card-title text-uppercase lang" key="titleCard1">
+                    Organize your travel routes
+                  </h5>
+                  <p class="card-text lang" key="bodyCard1">
+                    Visualize your transport routes and manage your vehicle.
+                  </p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
                   >
-                    <span>Flex time</span>
-                  </li>
-                  <li
-                    class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang"
-                    key="feat2AboutUs"
-                  >
-                    <span>Perfect work</span>
-                  </li>
-                  <li
-                    class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang"
-                    key="feat3AboutUs"
-                  >
-                    <span>Remote support</span>
-                  </li>
-                  <li
-                    class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang"
-                    key="feat4AboutUs"
-                  >
-                    <span>More dynamic routes</span>
-                  </li>
-                  <li
-                    class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang"
-                    key="feat5AboutUs"
-                  >
-                    <span>Communication</span>
-                  </li>
-                </ul>
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
+                  </svg>
+                </div>
               </div>
-              <div class="col-lg-5 ml-auto mb-4 mb-lg-0 order-1 order-lg-1">
-                <div class="p-2">
-                  <img
-                    class="img-fluid"
-                    src="public/assets/images/2.jpg"
-                    alt="AboutUs-Image"
-                  />
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100">
+                <div class="card-body text-center">
+                  <h5 class="card-title text-uppercase lang" key="titleCard2">
+                    Engage your performance with this steps.
+                  </h5>
+                  <p class="card-text lang" key="bodyCard2">
+                    Get information and equipment to help you improve the
+                    maintenance of your vehicle.
+                  </p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100">
+                <div class="card-body text-center">
+                  <h5 class="card-title text-uppercase lang" key="titleCard3">
+                    Be part of our team
+                  </h5>
+                  <p class="card-text lang" key="bodyCard3">
+                    Join if you are part of Businesses linked to land transport.
+                  </p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
+                  </svg>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </div>
-    </section>
-  </body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <section id="hero" class="py-5">
-      <div class="container">
-        <!-- Hero principal -->
-        <div class="row align-items-center text-center text-lg-start">
-          <!-- Texto -->
-          <div class="col-lg-6 mb-4 mb-lg-0 order-2 order-lg-1">
-            <p class="h6 text-uppercase text-primary mb-3 lang" key="titleHero">
-              Welcome to MoviGestion
-            </p>
-            <h2 class="mb-4 lang" key="subTitleHero">
-              ARE YOU READY TO BOOST YOUR PERFORMANCE
-            </h2>
-            <p class="text-muted lang" key="subTitleHero2">
-              Evaluate your growth path together with us.
-            </p>
-            <!-- Google Play Store Button -->
-            <a
-              href="https://play.google.com/store/apps/details?id=com.example.moviGestion"
-              target="_blank"
-            >
-              <img
-                class="callTo-Buttons img-fluid"
-                src="public/assets/images/Google_Play_Store_badge.svg"
-                alt="Google Play Store Button"
-              />
-            </a>
-            <!-- Descargar APK Button -->
-            <a
-              href="public/assets/apk/movigestion_mobile.zip"
-              download
-              class="btn btn-primary text-uppercase"
-            >
-              Descargar APK
-            </a>
-          </div>
-          <!-- Imagen -->
-          <div class="col-lg-6 order-1 order-lg-2">
-            <img
-              src="public/assets/images/1.jpg"
-              alt="Hero-Image"
-              class="img-fluid rounded shadow"
-            />
-          </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Sección de tarjetas -->
-      <div class="container mt-5">
-        <div class="row g-4">
-          <!-- Tarjeta 1 -->
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100">
-              <div class="card-body text-center">
-                <h5 class="card-title text-uppercase lang" key="titleCard1">
-                  Organize your travel routes
-                </h5>
-                <p class="card-text lang" key="bodyCard1">
-                  Visualize your transport routes and manage your vehicle.
-                </p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-arrow-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                  />
-                </svg>
+      <section id="about-us">
+        <div>
+          <section id="Us" class="py-5">
+            <div class="container py-5">
+              <div class="row">
+                <div class="col-lg-6 order-2 order-lg-2">
+                  <p
+                    class="h6 mb-1 text-uppercase text-primary mb-3 lang"
+                    key="titleAboutUs"
+                  >
+                    About Us
+                  </p>
+                  <h2 class="mb-4 text-uppercase lang" key="subTitleAboutUs">
+                    We are the perfect team you need
+                  </h2>
+                  <p class="text-small text-muted lang" key="bodyAboutUs">
+                    We are a company whose mission is to optimize and organize
+                    with great efficiency, the different activities carried out
+                    by a carrier solving the various problems that these
+                    present.
+                  </p>
+                  <div class="p-2"></div>
+                  <ul class="list-check list-unstyled row px-3 mb-4">
+                    <li
+                      class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang"
+                      key="feat1AboutUs"
+                    >
+                      <span>Flex time</span>
+                    </li>
+                    <li
+                      class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang"
+                      key="feat2AboutUs"
+                    >
+                      <span>Perfect work</span>
+                    </li>
+                    <li
+                      class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang"
+                      key="feat3AboutUs"
+                    >
+                      <span>Remote support</span>
+                    </li>
+                    <li
+                      class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang"
+                      key="feat4AboutUs"
+                    >
+                      <span>More dynamic routes</span>
+                    </li>
+                    <li
+                      class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang"
+                      key="feat5AboutUs"
+                    >
+                      <span>Communication</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-5 ml-auto mb-4 mb-lg-0 order-1 order-lg-1">
+                  <div class="p-2">
+                    <img
+                      class="img-fluid"
+                      src="assets/images/2.jpg"
+                      alt="AboutUs-Image"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- Tarjeta 2 -->
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100">
-              <div class="card-body text-center">
-                <h5 class="card-title text-uppercase lang" key="titleCard2">
-                  Engage your performance with this steps.
-                </h5>
-                <p class="card-text lang" key="bodyCard2">
-                  Get information and equipment to help you improve the
-                  maintenance of your vehicle.
-                </p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-arrow-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <!-- Tarjeta 3 -->
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100">
-              <div class="card-body text-center">
-                <h5 class="card-title text-uppercase lang" key="titleCard3">
-                  Be part of our team
-                </h5>
-                <p class="card-text lang" key="bodyCard3">
-                  Join if you are part of Businesses linked to land transport.
-                </p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-arrow-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
+          </section>
         </div>
-      </div>
-    </section>
-  </body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <section id="about-team">
+      </section>
+
+      <section id="about-team">
         <div class="container">
           <div class="row mb-5 text-center">
             <div class="col-md-8 mx-auto">
@@ -351,39 +323,16 @@
             </div>
           </div>
 
-          <!-- Distribución centrada y responsiva -->
           <div class="row justify-content-center text-center g-4">
             <h1 class="lang" key="subTitleOurTeam">OUR TEAM</h1>
             <div class="col-lg-3 col-md-4 col-sm-6">
               <div class="team-member card-effect">
                 <img
-                  src="public/assets/images/Elias.jpg"
-                  alt="Elias"
-                  class="img-fluid rounded-circle"
-                />
-                <h5 class="mb-0 mt-4">Elias</h5>
-                <p class="lang" key="cardMemberDescription">Developer</p>
-                <div class="social-icons">
-                  <a href="https://www.facebook.com" target="_blank"
-                    ><i class="fa-brands fa-facebook-f"></i
-                  ></a>
-                  <a href="https://twitter.com" target="_blank"
-                    ><i class="fa-brands fa-twitter"></i
-                  ></a>
-                  <a href="https://www.instagram.com" target="_blank"
-                    ><i class="fa-brands fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="team-member card-effect">
-                <img
-                  src="public/assets/images/piero.png"
+                  src="assets/images/alvaro.png"
                   alt="Piero"
                   class="img-fluid rounded-circle"
                 />
-                <h5 class="mb-0 mt-4">Piero</h5>
+                <h5 class="mb-0 mt-4">Alvaro</h5>
                 <p class="lang" key="cardMemberDescription">Developer</p>
                 <div class="social-icons">
                   <a href="https://www.facebook.com" target="_blank"
@@ -401,11 +350,11 @@
             <div class="col-lg-3 col-md-4 col-sm-6">
               <div class="team-member card-effect">
                 <img
-                  src="public/assets/images/Miguel.jpg"
+                  src="assets/images/cameron.png"
                   alt="Miguel"
                   class="img-fluid rounded-circle"
                 />
-                <h5 class="mb-0 mt-4">Miguel</h5>
+                <h5 class="mb-0 mt-4">Cameron</h5>
                 <p class="lang" key="cardMemberLeaderDescription">
                   Developer - Group Leader
                 </p>
@@ -425,7 +374,51 @@
             <div class="col-lg-3 col-md-4 col-sm-6">
               <div class="team-member card-effect">
                 <img
-                  src="public/assets/images/Mauricio.png"
+                  src="assets/images/matias.png"
+                  alt="Mauricio"
+                  class="img-fluid rounded-circle"
+                />
+                <h5 class="mb-0 mt-4">Matias</h5>
+                <p class="lang" key="cardMemberDescription">Developer</p>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com" target="_blank"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a href="https://twitter.com" target="_blank"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a href="https://www.instagram.com" target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="team-member card-effect">
+                <img
+                  src="assets/images/anthony.png"
+                  alt="Mauricio"
+                  class="img-fluid rounded-circle"
+                />
+                <h5 class="mb-0 mt-4">Anthony</h5>
+                <p class="lang" key="cardMemberDescription">Developer</p>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com" target="_blank"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a href="https://twitter.com" target="_blank"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a href="https://www.instagram.com" target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="team-member card-effect">
+                <img
+                  src="assets/images/Mauricio.png"
                   alt="Mauricio"
                   class="img-fluid rounded-circle"
                 />
@@ -444,19 +437,148 @@
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
       </section>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <section id="pricing">
+
+      <section id="services">
+        <div class="row mb-5">
+          <div class="col-md-8 mx-auto text-center">
+            <h6 class="text-primary text-uppercase lang" key="titleServices">
+              SERVICES
+            </h6>
+            <h1 class="lang" key="subTitleServices">Our Services</h1>
+            <p class="lang" key="bodyServices">
+              Here are some of the services offered in the app.
+            </p>
+          </div>
+        </div>
+        <div class="routes">
+          <div class="container">
+            <div class="image-left">
+              <img src="assets/images/img2.png" alt="imageService-routes" />
+            </div>
+            <div class="container-texts">
+              <h5 class="text-uppercase lang" key="routeTitleServices">
+                ROUTES
+              </h5>
+              <h1 class="lang" key="routeSubtitleServices">
+                Route organization
+              </h1>
+              <p class="lang" key="routeBodyServices">
+                Visualize your routes and manage your trips in the best way
+              </p>
+              <ul>
+                <li
+                  class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang"
+                  key="routeFeature1Services"
+                >
+                  <span>Departure and arrival times</span>
+                </li>
+                <li
+                  class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang"
+                  key="routeFeature2Services"
+                >
+                  <span>Travel program</span>
+                </li>
+                <li
+                  class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang"
+                  key="routeFeature3Services"
+                >
+                  <span>Visualize the map</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="calls">
+          <div class="container">
+            <div class="container-texts">
+              <div class="titles">
+                <h5 class="text-uppercase lang" key="callsTitleServices">
+                  Calls
+                </h5>
+                <h1 class="text-uppercase lang" key="callsSubtitleServices">
+                  COMMUNICATION WITH THE TEAM
+                </h1>
+              </div>
+              <p class="lang" key="callsBodyServices">
+                Easily make video calls or send messages to team members
+              </p>
+              <ul>
+                <li
+                  class="text-small text-muted col-lg-9 mb-2 bi bi-arrow-right-circle-fill lang"
+                  key="callsFeature1Services"
+                >
+                  <span>Make calls to the station</span>
+                </li>
+                <li
+                  class="text-small text-muted col-lg-9 mb-2 bi bi-arrow-right-circle-fill lang"
+                  key="callsFeature2Services"
+                >
+                  <span>Notify you of route changes</span>
+                </li>
+                <li
+                  class="text-small text-muted col-lg-9 mb-2 bi bi-arrow-right-circle-fill lang"
+                  key="callsFeature3Services"
+                >
+                  <span>Notify you of transport problems</span>
+                </li>
+              </ul>
+            </div>
+            <div class="image-calls">
+              <img
+                src="assets/images/RutasRegistro.PNG"
+                alt="callsService-image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="maintain">
+          <div class="container">
+            <div class="image-left">
+              <img
+                src="assets/images/Imagen4.svg"
+                alt="maintainService-image"
+              />
+            </div>
+            <div class="container-texts">
+              <h5 class="text-uppercase lang" key="maintainTitleServices">
+                MAINTENANCE
+              </h5>
+              <h1 class="lang" key="maintainSubtitleServices">
+                Vehicle status control
+              </h1>
+              <p class="lang" key="maintainBodyServices">
+                Check the condition of the vehicle and perform maintenance flow
+              </p>
+              <ul>
+                <li
+                  class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang"
+                  key="maintainFeature1Services"
+                >
+                  <span>Motor-Fuel</span>
+                </li>
+                <li
+                  class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang"
+                  key="maintainFeature2Services"
+                >
+                  <span>Pneumatics</span>
+                </li>
+                <li
+                  class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang"
+                  key="maintainFeature3Services"
+                >
+                  <span>Electric System</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing">
         <!--TODO: Implement pricing section-->
         <div class="container">
           <div class="row mb-5">
@@ -572,79 +694,93 @@
           </form>
         </div>
       </section>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="UX, Estrategia, Transformación Digital, Aplicaciones, Desarrollo de Software, Gestión Empresarial, Navex.">
-  <meta name="author" content="Equipo de Desarrollo de Navex">
-  <link rel="icon" href="public/assets/images/App-BranchIcon.png">
-  <title>Navex - Tu solución para la gestión empresarial</title> 
-</head>
-<body>
-  <section id="services">
-    <div class="row mb-5">
-        <div class="col-md-8 mx-auto text-center">
-            <h6 class="text-primary text-uppercase lang" key="titleServices">SERVICES</h6>
-            <h1 class="lang" key="subTitleServices">Our Services</h1>
-            <p class="lang" key="bodyServices">Here are some of the services offered in the app.</p>
-        </div>
-    </div>
-    <div class="routes">
+    </main>
+    <div id="footer">
+      <div class="footer-top">
         <div class="container">
-            <div class="image-left">
-                <img src="public/assets/images/img2.png" alt="imageService-routes">
+          <div class="row gy-4">
+            <div class="col-lg-4">
+              <img class="logo-foot" src="assets/images/logo.jpg" alt="logo" />
+              <span class="App-name">Navex</span>
             </div>
-            <div class="container-texts">
-                <h5 class="text-uppercase lang" key="routeTitleServices">ROUTES</h5>
-                <h1 class="lang" key="routeSubtitleServices">Route organization</h1>
-                <p class="lang" key="routeBodyServices">Visualize your routes and manage your trips in the best way</p>
-                <ul>
-                    <li class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang" key="routeFeature1Services"><span>Departure and arrival times</span></li>
-                    <li class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang" key="routeFeature2Services"><span>Travel program</span></li>
-                    <li class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang" key="routeFeature3Services"><span>Visualize the map</span></li>
-                </ul>
+            <div class="col-lg-2">
+              <h5 class="text-white lang" key="title1Footer">Brand</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#about-us" class="lang" key="subTitle1Footer"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a href="#services" class="lang" key="subTitle2Footer"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a href="#pricing" class="lang" key="subTitle3Footer"
+                    >Pricing</a
+                  >
+                </li>
+              </ul>
             </div>
+            <div class="col-lg-2">
+              <h5 class="text-white lang" key="title2Footer">More</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="lang" key="section2SubTitle1Footer"
+                    >FAQ's</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="lang" key="section2SubTitle2Footer"
+                    >Privacy & Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="lang" key="section2SubTitle3Footer"
+                    >Warranty</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="lang" key="section2SubTitle4Footer"
+                    >Shipment</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h5 class="text-white lang" key="title3Footer">Contact</h5>
+              <ul class="list-unstyled">
+                <li class="lang" key="section3SubTitle1Footer">
+                  Address: Prolongación Primavera 2390, Lima 15023
+                </li>
+                <li class="lang" key="section3SubTitle2Footer">
+                  Email: Navex@tyrant.pe.com
+                </li>
+                <li class="lang" key="section3SubTitle3Footer">
+                  Phone: (01) 639-4333
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
+      
     </div>
-    <div class="calls">
-        <div class="container">
-            <div class="container-texts">
-                <div class="titles">
-                    <h5 class="text-uppercase lang" key="callsTitleServices">Calls</h5>
-                    <h1 class="text-uppercase lang" key="callsSubtitleServices">COMMUNICATION WITH THE TEAM</h1>
-                </div>
-                <p class="lang" key="callsBodyServices">Easily make video calls or send messages to team members</p>
-                <ul>
-                    <li class="text-small text-muted col-lg-9 mb-2 bi bi-arrow-right-circle-fill lang" key="callsFeature1Services"><span>Make calls to the station</span></li>
-                    <li class="text-small text-muted col-lg-9 mb-2 bi bi-arrow-right-circle-fill lang" key="callsFeature2Services"><span>Notify you of route changes</span></li>
-                    <li class="text-small text-muted col-lg-9 mb-2 bi bi-arrow-right-circle-fill lang" key="callsFeature3Services"><span>Notify you of transport problems</span></li>
-                </ul>
-            </div>
-            <div class="image-calls">
-                <img src="public/assets/images/RutasRegistro.PNG" alt="callsService-image">
-            </div>
-        </div>
-    </div>
-    <div class="maintain">
-        <div class="container">
-            <div class="image-left">
-                <img src="public/assets/images/Imagen4.svg" alt="maintainService-image">
-            </div>
-            <div class="container-texts">
-                <h5 class="text-uppercase lang" key="maintainTitleServices">MAINTENANCE</h5>
-                <h1 class="lang" key="maintainSubtitleServices">Vehicle status control</h1>
-                <p class="lang" key="maintainBodyServices">Check the condition of the vehicle and perform maintenance flow</p>
-                <ul>
-                    <li class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang" key="maintainFeature1Services"><span>Motor-Fuel</span></li>
-                    <li class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang" key="maintainFeature2Services"><span>Pneumatics</span></li>
-                    <li class="text-small text-muted col-lg-6 mb-2 bi bi-arrow-right-circle-fill lang" key="maintainFeature3Services"><span>Electric System</span></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-</body>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/scripts/main.js"></script>
+  </body>
 </html>
